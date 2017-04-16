@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta content="Yarsadis Herrera name" name= "Author">
+	<meta content= "Sitio WEB practica 2" name = "description">
+	<meta content= 	"UNAD, Diseño WEB, html" name = "keywords">
+	<title>FASE 2</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<div id="contenedor">
+		<header>
+			
+			<figure>
+					<img src="img/logoUNAD.png"  ALIGN="left" alt="UNAD"  width="256" height="100">
+			</figure>
+			<h4> OVI Métodos de Ordenación con Programación Orientada a Objetos </h4>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="">LECTURA</a>
+					<ul>
+						<li><a href="burbuja.html">Burbuja</a></li>
+						<li><a href="Seleccion.html">Selección</a></li>
+						<li><a href="Insercion.html">Inserción</a></li>
+					</ul>
+				</li>
+				
+
+				<li><a href="">MULTIMEDIA</a></li>
+
+				<li><a href="">AUTORES</a></li>
+			</ul>
+		</nav>
+		<section>
+			<article>
+				
+				<h2>Metodo inserción</h2>
+				
+				<font color="black" ALIGN="left" size= 3><p>
+					Es un algoritmo sencillo de entender y de codificar</p>
+
+					<p>Si el tamaño de la entrada es N, entonces el orden del tiempo de ejecución, para el peor caso es O(N2); </p>
+
+					<p>Si la entrada esta "casi ordenada", el algoritmo se ejecuta mucho más rápidamente.Esta velocidad tiende a un tiempo O(N), peor caso que se cumple cuando la entrada está totalmente ordenada</p>
+
+					<p>Es por la propiedad anterior que este algoritmo, a pesar de no ser el más rápido para entradas grandes, suele usarse de la siguiente manera: Se semi ordena la entrada con algún otro algoritmo más rápido y más adecuado para entradas grandes. Luego, cuando tenemos la entrada "casi ordenada" usamos este algoritmo. La velocidad de ejecución será muy buena por dos razones: su tiempo de ejecución tiende a O(N) con entradas "casi ordenadas" (lo cual es un tiempo excelente), y la simpleza de su implementación hará que se ejecute más rápido que otros algoritmos más complejos.</p>
+					<p>
+						Explicación del algoritmo. Sea A el array a ordenar con N elementos. El algoritmo
+					consiste en recorrer todo el array A comenzando desde la posición p=2 y terminando en
+					p=N. Para cada p, se trata de ubicar en el lugar correcto el elemento A[p] en entre los
+					elementos anteriores: A[p-1], A[p-2], ..., A[0].
+
+					</p>
+					<p>
+						Dada la posición actual p, el algoritmo se basa en que los elementos A[0], A[1], ...,
+						A[p-1] ya están ordenados.
+
+					</p>
+				<img src="img/Insercion.png"  ALIGN="center" alt="UNAD"  width="400" height="220">
+			</font>
+				
+			<p>
+			notas tomadas de 
+			<a href="http://es.tldp.org/Tutoriales/doc-programacion-algoritmos-ordenacion/alg_orden.pdf" target="_blank">Sebastian Gurin</a>.
+			</p>
+			</article>
+			
+		</section>
+		<aside>
+			<
+		            <a class="twitter-timeline"  href="https://twitter.com/hashtag/unad" data-widget-id="853690416948011009">Tweets sobre #unad</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+          
+          
+			
+		</aside>
+		<footer >
+			<font color="white" ALIGN="center" size= 1><p>UNIVERSIDAD NACIONAL ABIERTA Y A DISTANCIA</p></font>
+			<font color="white" ALIGN="center"size= 1><p>YARSADIS ISABEL HERRERA</p></font>
+			<img src="img/logoUNADgrisInferior.png"  ALIGN="left" alt="UNAD"  width="200" height="50">
+			<a href="https://www.cerotec.net/estadisticas-99508/fffff.com" title="abrir detalles"><img src="https://www.cerotec.net/contador.php?t=5&s=3&i=99508" alt="Contador de visitas y estadísticas"></a> <br><a href='https://www.cerotec.net/contadores/' style='font-size:12px;' >contadores visitas</a>
+
+		</footer>
+
+
+	</div>
+</body>
+<script src="js/modernizr"></script>
+<script src="js/prefixfree"></script>
+</html>
